@@ -1,0 +1,29 @@
+﻿
+@media  only screen and (min-device-width: 768px) 
+{
+    .form-container {
+      padding: 5%;
+      background: #1F1F1F;
+      border: 9px solid #1F1F1F;   
+      max-width: 520px;
+      margin: auto;
+    }
+
+}
+
+h1, p 
+{
+  text-align: center;
+  color:white;
+  font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+input, textarea , button
+{
+  width: 100%;
+}    
+textarea
+{
+  height: 200px;
+}
+

@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head enableviewstate="true">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>War Lord</title>
+
+<link href="CSS/Main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+//
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_swapImgRestore() {//v1.0
+ var doc=document,i; if(doc.$imgSwaps) { for(i=0;i<doc.$imgSwaps.length;i++) {
+  var elm=doc.$imgSwaps[i]; if(elm) { elm.src=elm.$src; elm.$src=null; } } 
+  doc.$imgSwaps=null; }
+}
+-->
+</script>
+<style type="text/css">
+#menu-bar {
+  max-width:960px;
+  margin: auto;
+  position:relative;
+  top:30px;
+  width: 510px;
+  padding: 6px 6px 4px 6px;
+  height: 36px;
+  line-height: 100%;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  box-shadow: 2px 2px 0px #4A4A4A;
+  -webkit-box-shadow: 2px 2px 0px #4A4A4A;
+  -moz-box-shadow: 2px 2px 0px #4A4A4A;
+  background: #303030;
+  border: solid 0px #6D6D6D;
+  z-index:999;
+}
+#menu-bar li {
+  margin: 0px 0px 6px 0px;
+  padding: 0px 6px 0px 6px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#menu-bar a {
+  font-weight: normal;
+  font-family: helvetica;
+  font-style: normal;
+  font-size: 12px;
+  color: #E7E5E5;
+  text-decoration: none;
+  display: block;
+  padding: 6px 20px 6px 20px;
+  margin: 0;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  text-shadow: 2px 2px 3px #000000;
+}
+#menu-bar li ul li a {
+  margin: auto;
+}
+#menu-bar .active a, #menu-bar li:hover > a {
+  background: #FF2970;
+  background: linear-gradient(top,  #FF1764,  #303030);
+  background: -ms-linear-gradient(top,  #FF1764,  #303030);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF1764), to(#303030));
+  background: -moz-linear-gradient(top,  #FF1764,  #303030);
+  color: #FFFFFF;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 2px 2px 3px #000000;
+}
+#menu-bar ul li:hover a, #menu-bar li:hover li a {
+  background: none;
+  border: none;
+  color: #666;
+  -box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+#menu-bar ul a:hover {
+  background: #0399D4 !important;
+  background: linear-gradient(top,  #EC154F,  #262626) !important;
+  background: -ms-linear-gradient(top,  #EC154F,  #262626) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EC154F), to(#262626)) !important;
+  background: -moz-linear-gradient(top,  #EC154F,  #262626) !important;
+  color: #FFFFFF !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  text-shadow: 2px 2px 0px #000000;
+}
+#menu-bar li:hover > ul {
+  display: block;
+}
+#menu-bar ul {
+  background: #DDDDDD;
+  background: linear-gradient(top,  #262626,  #242424);
+  background: -ms-linear-gradient(top,  #262626,  #242424);
+  background: -webkit-gradient(linear, left top, left bottom, from(#262626), to(#242424));
+  background: -moz-linear-gradient(top,  #262626,  #242424);
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 155px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: solid 0px #B4B4B4;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-box-shadow: 2px 2px 25px #000000;
+  -moz-box-shadow: 2px 2px 25px #000000;
+  box-shadow: 2px 2px 25px #000000;
+}
+#menu-bar ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+#menu-bar ul a {
+  padding:10px 0px 10px 15px;
+  color:#FFFFFF !important;
+  font-size:12px;
+  font-style:normal;
+  font-family:arial;
+  font-weight: normal;
+  text-shadow: 2px 2px 25px #0A0A0A;
+}
+#menu-bar ul li:first-child > a {
+  border-top-left-radius: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+}
+#menu-bar ul li:last-child > a {
+  border-bottom-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+}
+#menu-bar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#menu-bar {
+  display: inline-block;
+}
+  html[xmlns] #menu-bar {
+  display: block;
+}
+* html #menu-bar {
+  height: 1%;
+}
+.img {
+	max-width: 960px;
+	position:relative;
+	top: 0px;
+	height:400px;
+	width: 340px;
+	left: 18px;
+	margin:auto;
+}
+.body {
+	background: linear-gradient(#2C2C2C, #999999);
+	background-repeat:no-repeat;
+	background-color:#999999;
+	max-width: 960px;
+	margin: auto;
+}
+.content1 {
+	position: relative;
+	max-width: 960px;
+	width:480px;
+	margin: auto;
+	height: 640px;
+	background-color: #1F1F1F;
+}
+.content1 h3 {
+position: relative;
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:white;
+font-size:x-large
+}
+.content1 p {
+	position: absolute;
+	max-width: 960px;
+	margin: auto;
+	color: white;
+	font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.content2 {
+	position: relative;
+	max-width: 960px;
+	margin: auto;
+	background-color: #1F1F1F;
+}
+.audio {
+margin:auto;
+position:absolute;
+max-width:960px;
+top:10px;
+left:10px;
+}
+
+</style>
+</head>
+
+<body class="body" onload="FP_preloadImgs(/*url*/'Images/fb2.gif')">
+
+		<div class="img" style="left: 19px; top: 0px; height: 78px; width: 408px; z-index: 3;">
+		<a href="Home.html"><img src="Images/img6.gif" height="132" style="z-index: 2;  top: -1px; left: 2px" width="402"/></a>
+		</div>
+
+<div>
+<ul id="menu-bar" style="background-color: #282828; z-index: 4;">
+ <li style="left: 9px; top: 2px; height: 32px"><a href="Home.html">Home</a></li>
+  <li style="left: 25px; top: 1px"><a href="About.html">About</a></li>
+ <li class ="active" style="left: 42px; top: 1px"><a href="Films.html">Films</a>
+  <ul>
+   <li><a href="WarLord.html">The War Lord</a></li>
+   <li><a href="RobinandMarian.html">Robin and Marian</a></li>
+   <li><a href="Excalibur.html">Excalibur</a></li>
+   <li><a href="FirstKnight.html">First Knight</a></li>
+  </ul>
+ </li>
+ <li style="left: 58px; top: 1px"><a href="Shop.html">Store</a>
+  <ul>
+ <li><a href="managecart.html">Basket</a></li>
+ </ul>
+ <li style="left: 76px; top: 1px"><a href="Contact.html">Contact</a></li></li>
+</ul>
+</div>
+<div class="audio" style="height: 2px"><audio controls>
+  <source src="Sound/1.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></div>
+<div class="content1" style="left: 12px; top: 36px; width: 518px; z-index: 2;">
+	<h3 style="z-index: 4"><br />
+	The War Lord (1965)</h3>
+	<p style="left: 18px; top: 277px; width: 475px; z-index: 3;">
+	<span style="font-family: Cambria, Cochin, Georgia, Times, &quot;Times New Roman&quot;, serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
+	Chrysagon, a powerful knight, is sent to defend a coastal 
+	village. He falls in love with Bronwyn, who has been promised to Marc, 
+	Chrysagon is filled with regret until he learns of a tradition that would 
+	allow him to take Bronwyn on the eve of her wedding. When she fails to 
+	return the next morning, Chrysagon is accused of holding her hostage. As 
+	Marc prepares for war, Chrysagon must also contend with his jealous brother.</span></p>
+	<iframe width="430" height="200" src="https://www.youtube.com/embed/kOIHEyj6YGc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="z-index: 1; position: absolute; top: 65px; left: 42px"></iframe>
+</div>
+<div class="content2" style="left: 12px; top: 41px; height: 77px; width: 518px"></div>
+</body>
+</html>
