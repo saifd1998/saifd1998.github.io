@@ -322,58 +322,10 @@ input[type=submit]:hover {
  <li class="active" style="left: 76px; top: 1px"><a>Contact</a></li></li>
 </ul>
 </div>
-<div class="audio" style="height: 2px"><audio controls preload="auto" src="Sound/1.wav" loop="true" autobuffer>
-Unsupported in Firefox
-</audio>
-
-<script>
-
-function setCookie(c_name,value,exdays)
-{
-    var exdate=new Date();
-    exdate.setDate(exdate.getDate() + exdays);
-    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-    document.cookie=c_name + "=" + c_value;
-}
-
-function getCookie(c_name)
-{
-    var i,x,y,ARRcookies=document.cookie.split(";");
-    for (i=0;i<ARRcookies.length;i++)
-    {
-      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
-      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
-      x=x.replace(/^\s+|\s+$/g,"");
-      if (x==c_name)
-        {
-        return unescape(y);
-        }
-      }
-}
-
-var song = document.getElementsByTagName('audio')[0];
-var played = false;
-var tillPlayed = getCookie('timePlayed');
-function update()
-{
-    if(!played){
-        if(tillPlayed){
-        song.currentTime = tillPlayed;
-        song.play();
-        played = true;
-        }
-        else {
-                song.play();
-                played = true;
-        }
-    }
-
-    else {
-    setCookie('timePlayed', song.currentTime);
-    }
-}
-setInterval(update,1000);
-</script></div>
+<div class="audio" style="height: 2px"><audio controls>
+  <source src="Sound/1.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></div>
 <div class="content1" style="left: 12px; top: 36px; width: 518px; z-index: 2; height: 654px;">
 <h2 style="height: 26px; position: absolute; top: 22px; left: 203px; z-index: 2; width: 155px">Contact us</h2>
   <form class="form1" style="z-index: 1; width: 480px; height: 556px; position: absolute; top: 59px; left: 20px; color: #FFFFFF;">

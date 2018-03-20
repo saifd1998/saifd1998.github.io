@@ -322,58 +322,10 @@ left:10px;
  <li style="left: 76px; top: 1px"><a href="Contact.html">Contact</a></li></li>
 </ul>
 </div>
-<div class="audio" style="height: 2px"><audio controls preload="auto" src="Sound/1.wav" loop="true" autobuffer>
-Unsupported in Firefox
-</audio>
-
-<script>
-
-function setCookie(c_name,value,exdays)
-{
-    var exdate=new Date();
-    exdate.setDate(exdate.getDate() + exdays);
-    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-    document.cookie=c_name + "=" + c_value;
-}
-
-function getCookie(c_name)
-{
-    var i,x,y,ARRcookies=document.cookie.split(";");
-    for (i=0;i<ARRcookies.length;i++)
-    {
-      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
-      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
-      x=x.replace(/^\s+|\s+$/g,"");
-      if (x==c_name)
-        {
-        return unescape(y);
-        }
-      }
-}
-
-var song = document.getElementsByTagName('audio')[0];
-var played = false;
-var tillPlayed = getCookie('timePlayed');
-function update()
-{
-    if(!played){
-        if(tillPlayed){
-        song.currentTime = tillPlayed;
-        song.play();
-        played = true;
-        }
-        else {
-                song.play();
-                played = true;
-        }
-    }
-
-    else {
-    setCookie('timePlayed', song.currentTime);
-    }
-}
-setInterval(update,1000);
-</script></div>
+<div class="audio" style="height: 2px"><audio controls>
+  <source src="Sound/1.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio></div>
 <div class="content1" style="left: 12px; top: 36px; width: 518px; z-index: 2;">
 
 <div class="google" style="left: -117px; top: 395px; width: 87px; height: 89px; z-index: 1;" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'google',/*url*/'Images/g2.gif')">
