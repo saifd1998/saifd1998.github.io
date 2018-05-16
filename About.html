@@ -39,6 +39,121 @@ function FP_getObjectByID(id,o) {//v1.0
 -->
 </script>
 <style type="text/css">
+button {
+    background-color: #1F1F1F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.size_options h2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:white;
+font-size:30px;
+}
+.text_size h2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:white;
+font-size:30px;
+}
+
+#para1 {
+	position: relative;
+	max-width: 960px;
+	margin: auto;
+	color: #FFFFFF;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#para2 {
+	position: relative;
+	max-width: 960px;
+	margin: auto;
+	color: #FFFFFF;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#title1 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:30px;
+}
+#title2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:30px;
+}
+#title3 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:30px;
+}
+
+.size_options {
+	margin:auto;
+	position:absolute;
+	max-width:960px;
+	
+}
+.text_size {
+	margin:auto;
+	position:absolute;
+	max-width:960px;
+	
+}
+#content1 {
+	position: relative;
+	max-width: 960px;
+	width:480px;
+	margin: auto;
+	height: 640px;
+	background-color: #1F1F1F;
+}
+#content1 h2 {
+position: relative;
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:left;
+font-family:"Monotype Corsiva";
+color:white;
+font-size:x-large;
+}
+#content1 p {
+	position: relative;
+	max-width: 960px;
+	margin: auto;
+	color: white;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 #menu-bar {
   max-width:960px;
   margin: auto;
@@ -203,32 +318,7 @@ function FP_getObjectByID(id,o) {//v1.0
 	max-width: 960px;
 	margin: auto;
 }
-.content1 {
-	position: relative;
-	max-width: 960px;
-	width:480px;
-	margin: auto;
-	height: 640px;
-	background-color: #1F1F1F;
-}
-.content1 h2 {
-position: relative;
-max-width: 960px;
-width:480px;
-margin: auto;
-text-align:left;
-font-family:"Monotype Corsiva";
-color:white;
-font-size:x-large;
-}
-.content1 p {
-	position: relative;
-	max-width: 960px;
-	margin: auto;
-	color: white;
-	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.maps {
+#maps {
 	position: absolute;
 	max-width: 960px;
 	width:280px;
@@ -324,7 +414,7 @@ left:10px;
 </ul>
 </div>
 <div class="audio" style="height: 2px"><audio controls src="Sound/2.wav" type="audio/wav"></audio></div>
-<div class="content1" style="left: 12px; top: 36px; width: 518px; z-index: 2;">
+<div id="content1" style="left: 12px; top: 38px; width: 518px; z-index: 2; height: 688px;">
 
 <div class="google" style="left: -117px; top: 395px; width: 87px; height: 89px; z-index: 1;" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'google',/*url*/'Images/g2.gif')">
 	<a href="https://plus.google.com/u/1/114051451959315868453" target="blank"><img src="Images/g1.gif" id="google" height="79" style="left: 4px; top: 6px" width="80"></img></a></div>
@@ -333,21 +423,73 @@ left:10px;
 <div class="facebook" style="left: -124px; top: 73px; width: 104px; height: 88px; z-index: 3;" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'facebook',/*url*/'Images/FB2.gif')">
 	<a href="https://www.facebook.com/The-Reel-Classic-2086795838005084" target="blank"><img src="Images/FB1.gif" id="facebook" height="87" style="left: -1px; top: 1px; z-index: 1;" width="103"></img></a></div>
 
-	<h2 style="left: 16px; top: 29px; height: 26px; position: absolute; z-index: 1">
+	<h2 id="title1" style="left: 16px; top: 29px; height: 26px; position: absolute; z-index: 1">
 	About us</h2>
-	<h2 style="left: 18px; top: 346px; height: 26px; position: absolute; z-index: 1">
+	<h2 id="title3" style="left: 19px; top: 378px; height: 26px; position: absolute; z-index: 1">
 	Find us on Google maps</h2>
-	<p style="width: 481px; height: 151px; position: absolute; top: 257px; left: 17px; z-index: 2">If you want to show your support to The Reel Classics, please support us by following us on our social media accounts, we will be announcing updates about the website and upcoming films, and so.</p>
-	<p style="width: 481px; height: 151px; position: absolute; top: 62px; left: 16px; z-index: 2">So, who are we? We are The Reel Classics. This is a webpage brought to you, to remind you about the good old films that were airing back in the days, these were the good old times! Adults may remember some of these films, and young children might want to consider watching some of these, as it can teach them how films were like back in the days. The films which we are hosting are based on Medieval Action and Adventure.</p>
-	<h2 style="left: 17px; top: 225px; height: 26px; position: absolute; z-index: 1">
+	<p id="para1" style="width: 481px; height: 66px; position: absolute; top: 273px; left: 17px; z-index: 2">If you want to show your support to The Reel Classics, please support us by following us on our social media accounts, we will be announcing updates about the website and upcoming films, and so.</p>
+	<p id="para2" style="width: 481px; height: 151px; position: absolute; top: 62px; left: 16px; z-index: 2">So, who are we? We are The Reel Classics. This is a webpage brought to you, to remind you about the good old films that were airing back in the days, these were the good old times! Adults may remember some of these films, and young children might want to consider watching some of these, as it can teach them how films were like back in the days. The films which we are hosting are based on Medieval Action and Adventure.</p>
+	<p></p>
+	<h2 id="title2" style="left: 14px; top: 248px; height: 26px; position: absolute; z-index: 1">
 	Follow us on our social media</h2>
-<div class="maps" style="left: 19px; top: 375px; height: 259px; width: 485px"><script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyClPczbXY69y_qObldos1xvpJH2KhW39bE'></script>
+<div id="maps" style="left: 18px; top: 412px; height: 259px; width: 485px"><script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyClPczbXY69y_qObldos1xvpJH2KhW39bE'></script>
 	<div style='overflow:hidden;height:213px; width:483px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://mapswebsite.net/'>add map to website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=db8ac9549a5fdb15d0c76e94553885c591968c76'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(52.4832749,-1.8896045000000186),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.4832749,-1.8896045000000186)});infowindow = new google.maps.InfoWindow({content:'<strong>The Reel Classics</strong><br>1 Jennens Road<br>B4 7PS Birmingham<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></div></div>
-<div class="content2" style="left: 12px; top: 41px; height: 77px; width: 518px">
+<div class="content2" style="left: 13px; top: 46px; height: 77px; width: 518px">
 	<a href="Copyright/License.docx"><h4 class="text3" style="left: 186px; top: 13px; width: 140px;">@Copyright 2018</h4></a>
 	<p class="text4" style="left: 135px; top: 33px">All rights reserved. The Reel Classics</p></div>
+	
+	<div class="size_options" style="left: 7px; top: 113px; width: 202px; height: 232px">
+<h2 style="left: 0px; top: 0px; width: 200px">Colour Settings</h2>
+<button type="button" onclick="myFunctiond()">
+	Normal Background</button>
 
+<script>
+function myFunctiond() {
+    document.getElementById("content1").style.backgroundColor ="#1F1F1F";
+     document.getElementById("para1").style.color = "#FFFFFF";
+      document.getElementById("title1").style.color = "#FFFFFF";
+       document.getElementById("para2").style.color = "#FFFFFF";
+        document.getElementById("title2").style.color = "#FFFFFF";
+         document.getElementById("title3").style.color = "#FFFFFF";
+}
+</script>
+<div><button type="button" onclick="myFunctionz()" style="z-index: 1; position: absolute; top: 96px; left: 0px">
+	White Background</button>
 
-		<!-- end div#menu -->
+<script>
+function myFunctionz() {
+    document.getElementById("content1").style.backgroundColor ="#FFFFFF";
+     document.getElementById("para1").style.color = "#000000";
+      document.getElementById("title1").style.color = "#000000";
+       document.getElementById("para2").style.color = "#000000";
+        document.getElementById("title2").style.color = "#000000";
+         document.getElementById("title3").style.color = "#000000";
+}
+</script>
+</div>
+</div>
+
+<div class="text_size" style="left: 5px; top: 351px; height: 241px; width: 204px"><h2 style="left: 0px; top: 0px; width: 200px">Text Settings</h2>
+<button type="button" onclick="myFunction()">Normal Font Size</button>
+ 
+<script>
+function myFunction() {
+        document.getElementById("para2").style.fontSize = "12pt";
+     document.getElementById("para1").style.fontSize = "12pt";
+
+}
+</script>
+
+<button type="button" onclick="myFunction1()" style="z-index: 1; position: absolute; top: 92px; left: -1px">Large Font Size</button>
+ 
+<script>
+function myFunction1() {
+        document.getElementById("para2").style.fontSize = "14pt";
+     document.getElementById("para1").style.fontSize = "14pt";
+
+}
+</script>
+</div>
+
 	</body>
 </html>

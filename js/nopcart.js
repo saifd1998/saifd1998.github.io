@@ -90,12 +90,12 @@ DisplayNotice         = true;
 DisplayShippingColumn = true;
 DisplayShippingRow    = true;
 DisplayTaxRow         = true;
-TaxRate               = 0.07;
+TaxRate               = '0.07';
 TaxByRegion           = true;
 TaxPrompt             = 'For VAT purposes, please select if you are a UK resident before continuing';
 TaxablePrompt         = 'UK Residents';
 NonTaxablePrompt      = 'Other Residents';
-MinimumOrder          = 0.00;
+MinimumOrder          = '0.00';
 MinimumOrderPrompt    = 'Your order is below our minimum order, please order more before checking out.';
 
 //Payment Processor Options:
@@ -384,24 +384,7 @@ function DeleteCookie (name,path,domain) {
 // RETURNS:     Formatted Number                                       ||
 // PURPOSE:     Reformats Dollar Amount to #.## format                 ||
 //---------------------------------------------------------------------||
-function moneyFormat(input) {
-   var dollars = Math.floor(input);
-   var tmp = new String(input);
-
-   for ( var decimalAt = 0; decimalAt < tmp.length; decimalAt++ ) {
-      if ( tmp.charAt(decimalAt)=="." )
-         break;
-   }
-
-   var cents  = "" + Math.round(input * 100);
-   cents = cents.substring(cents.length-2, cents.length)
-           dollars += ((tmp.charAt(decimalAt+2)=="9")&&(cents=="00"))? 1 : 0;
-
-   if ( cents == "0" )
-      cents = "00";
-
-   return(dollars + "." + cents);
-}
+ 
 
 
 //---------------------------------------------------------------------||

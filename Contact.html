@@ -39,6 +39,132 @@ function FP_getObjectByID(id,o) {//v1.0
 -->
 </script>
 <style type="text/css">
+button {
+    background-color: #1F1F1F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.size_options h2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:white;
+font-size:30px;
+}
+.text_size h2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:white;
+font-size:30px;
+}
+
+#para1 {
+	position: relative;
+	max-width: 960px;
+	margin: auto;
+	color: #FFFFFF;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#title1 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:30px;
+}
+#title2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:19px;
+}
+#title3 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:19px;
+}
+#title4 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:19px;
+}
+#title5 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:19px;
+}
+
+#content1 {
+	position: relative;
+	max-width: 960px;
+	width:480px;
+	margin: auto;
+	height: 640px;
+	background-color: #1F1F1F;
+}
+#content1 h3 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:30px;
+}
+#content1 p {
+	position: relative;
+	max-width: 960px;
+	margin: auto;
+	color: #FFFFFF;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.size_options {
+	margin:auto;
+	position:absolute;
+	max-width:960px;
+	
+}
+.text_size {
+	margin:auto;
+	position:absolute;
+	max-width:960px;
+	
+}
 #menu-bar {
   max-width:960px;
   margin: auto;
@@ -324,17 +450,17 @@ input[type=submit]:hover {
 </ul>
 </div>
 <div class="audio" style="height: 2px"><audio controls src="Sound/2.wav" type="audio/wav"></audio></div>
-<div class="content1" style="left: 12px; top: 36px; width: 518px; z-index: 2; height: 654px;">
-<h2 style="height: 26px; position: absolute; top: 22px; left: 203px; z-index: 2; width: 155px">Contact us</h2>
+<div id="content1" style="left: 12px; top: 36px; width: 518px; z-index: 2; height: 654px;">
+<h2 id="title1" style="height: 36px; position: absolute; top: 18px; left: 180px; z-index: 2; width: 155px">Contact us</h2>
   <form class="form1" style="z-index: 1; width: 480px; height: 556px; position: absolute; top: 59px; left: 20px; color: #FFFFFF;">
 
-    <label>First Name</label>
+    <label id="title2">First Name</label>
     <input type="text" name="firstname" placeholder="Your name.."/>
 
-    <label for="lname">Last Name</label>
+    <label for="lname" id="title3">Last Name</label>
     <input type="text" name="lastname" placeholder="Your last name.."/>
 
-    <label>Ratings</label>
+    <label id="title4">Ratings</label>
     <select>
       <option value="australia"></option>
       <option value="australia">Bad</option>
@@ -342,7 +468,7 @@ input[type=submit]:hover {
       <option value="usa">Excellent!</option>
     </select>
 
-    <label>Subject</label>
+    <label id="title5">Subject</label>
     <textarea placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" style="width: 35%; z-index: 1; position: absolute; top: 506px; left: 3px" />
@@ -353,7 +479,64 @@ input[type=submit]:hover {
 	<a href="Copyright/License.docx"><h4 class="text3" style="left: 186px; top: 13px; width: 140px;">@Copyright 2018</h4></a>
 	<p class="text4" style="left: 135px; top: 33px">All rights reserved. The Reel Classics</p></div>
 
+<div class="size_options" style="left: 7px; top: 113px; width: 202px; height: 232px">
+<h2 style="left: 0px; top: 0px; width: 200px">Colour Settings</h2>
+<button type="button" onclick="myFunctiond()">
+	Normal Background</button>
 
-		<!-- end div#menu -->
+<script>
+function myFunctiond() {
+    document.getElementById("content1").style.backgroundColor ="#1F1F1F";
+      document.getElementById("title1").style.color = "#FFFFFF";
+       document.getElementById("title2").style.color = "#FFFFFF";
+        document.getElementById("title3").style.color = "#FFFFFF";
+         document.getElementById("title4").style.color = "#FFFFFF";
+          document.getElementById("title5").style.color = "#FFFFFF";
+}
+</script>
+<div><button type="button" onclick="myFunctionz()" style="z-index: 1; position: absolute; top: 96px; left: 0px">
+	White Background</button>
+
+<script>
+function myFunctionz() {
+    document.getElementById("content1").style.backgroundColor ="#FFFFFF";
+      document.getElementById("title1").style.color = "#000000";
+       document.getElementById("title2").style.color = "#000000";
+        document.getElementById("title3").style.color = "#000000";
+         document.getElementById("title4").style.color = "#000000";
+          document.getElementById("title5").style.color = "#000000";
+}
+</script>
+</div>
+</div>
+
+<div class="text_size" style="left: 5px; top: 351px; height: 241px; width: 204px"><h2 style="left: 0px; top: 0px; width: 200px">Text Settings</h2>
+<button type="button" onclick="myFunction()">Normal Font Size</button>
+ 
+<script>
+function myFunction() {
+    document.getElementById("para1").style.fontSize = "12pt";
+}
+</script>
+
+<button type="button" onclick="myFunction1()" style="z-index: 1; position: absolute; top: 146px; left: -1px">Large Font Size</button>
+ 
+<script>
+function myFunction1() {
+    document.getElementById("para1").style.fontSize = "16pt";
+}
+</script>
+
+<button type="button" onclick="myFunction2()" style="z-index: 1; position: absolute; top: 91px; left: 0px">Medium Font Size</button>
+ 
+<script>
+function myFunction2() {
+    document.getElementById("para1").style.fontSize = "14pt";
+}
+</script>
+
+
+
+</div>
 	</body>
 </html>

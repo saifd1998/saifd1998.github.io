@@ -38,7 +38,56 @@ function FP_swapImgRestore() {//v1.0
 }
 -->
 </script>
+<!--Accessibility For Text Size Changing-->
 <style type="text/css">
+button {
+    background-color: #1F1F1F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.size_options h2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:white;
+font-size:30px;
+}
+.text_size h2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:white;
+font-size:30px;
+}
+
+#para1 {
+	position: relative;
+	max-width: 960px;
+	margin: auto;
+	color: #FFFFFF;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#title1 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:30px;
+}
 #menu-bar {
   max-width:960px;
   margin: auto;
@@ -203,7 +252,7 @@ function FP_swapImgRestore() {//v1.0
 	max-width: 960px;
 	margin: auto;
 }
-.content1 {
+#content1 {
 	position: relative;
 	max-width: 960px;
 	width:480px;
@@ -211,21 +260,21 @@ function FP_swapImgRestore() {//v1.0
 	height: 640px;
 	background-color: #1F1F1F;
 }
-.content1 h3 {
+#content1 h3 {
 position: relative;
 font-family:"Monotype Corsiva";
 max-width: 960px;
 width:480px;
 margin: auto;
 text-align:center;
-color:white;
+color:#FFFFFF;
 font-size:30px;
 }
-.content1 p {
+#content1 p {
 	position: relative;
 	max-width: 960px;
 	margin: auto;
-	color: white;
+	color: #FFFFFF;
 	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .content2 {
@@ -268,12 +317,24 @@ max-width:960px;
 top:10px;
 left:10px;
 }
+.size_options {
+	margin:auto;
+	position:absolute;
+	max-width:960px;
+	
+}
+.text_size {
+	margin:auto;
+	position:absolute;
+	max-width:960px;
+	
+}
 
 </style>
 
 </head>
 
-<body class="body" onload="FP_preloadImgs(/*url*/'Images/fb2.gif')">
+<body class="body" onload="FP_preloadImgs(/*url*/'Images/fb2.gif')" style="height: 885px">
 
 		<div class="img" style="left: 19px; top: 0px; height: 78px; width: 408px; z-index: 3;">
 		<img src="Images/img6.gif" height="132" style="z-index: 2;  top: -1px; left: 2px" width="402"/>
@@ -298,8 +359,10 @@ left:10px;
  <li style="left: 76px; top: 1px"><a href="Contact.html">Contact</a></li></li>
 </ul>
 </div>
-<div class="audio" style="height: 2px"><audio controls autoplay src="Sound/2.wav" type="audio/wav"></audio></div>
-<div class="content1" style="left: 12px; top: 36px; width: 518px; z-index: 2;">
+<div class="audio" style="height: 2px">
+<audio controls autoplay src="Sound/2.wav" type="audio/wav">
+</audio></div>
+<div id="content1" style="left: 12px; top: 36px; width: 518px; z-index: 2;">
     <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->
@@ -415,7 +478,7 @@ left:10px;
 
     </style>
     
-    <div id="jssor_1" style="position:absolute; margin:0 auto;top:254px; left:29px; width:442px; height:267px; overflow:hidden;visibility:hidden; z-index: 6;">
+    <div id="jssor_1" style="position:absolute; margin:0 auto;top:319px; left:29px; width:442px; height:267px; overflow:hidden;visibility:hidden; z-index: 6;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
@@ -464,11 +527,67 @@ left:10px;
 <div class="facebook" style="left: -124px; top: 73px; width: 104px; height: 88px; z-index: 3;" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'facebook',/*url*/'Images/FB2.gif')">
 	<a href="https://www.facebook.com/The-Reel-Classic-2086795838005084" target="blank"><img src="Images/FB1.gif" id="facebook" height="87" style="left: -1px; top: 1px; z-index: 1;" width="103"></img></a></div>
 
-	<h3 style="z-index: 5"><br />
+	<h3 id="title1" style="z-index: 5"><br />
 	The Reel Classics</h3>
-	<p style="left: 0px; top: 20px; width: 475px; z-index: 4;">Welcome to The Reel Classic, where we bring you the reminders of the past, the good old days! We are currently hosting medieval adventure films, so feel free to check them out. Feel free to also follow the developer on Twitter (by clicking on the Twitter icon) or Google Plus (by clicking on the g+ icon). Furthermore, if you wish to show your support to The Reel Classic, please follow us on Facebook. Thank you!</p></div>
+	<p id="para1" style="left: 0px; top: 20px; width: 475px; z-index: 4;">Welcome to The Reel Classic, where we bring you the reminders of the past, the good old days! We are currently hosting medieval adventure films, so feel free to check them out. Feel free to also follow the developer on Twitter (by clicking on the Twitter icon) or Google Plus (by clicking on the g+ icon). Furthermore, if you wish to show your support to The Reel Classic, please follow us on Facebook. Thank you!</p>
+	
+</div>
 <div class="content2" style="left: 12px; top: 41px; height: 77px; width: 518px">
 	<a href="Copyright/License.docx"><h4 class="text3" style="left: 186px; top: 13px; width: 140px;">@Copyright 2018</h4></a>
 	<p class="text4" style="left: 135px; top: 33px">All rights reserved. The Reel Classics</p></div>
+<div class="size_options" style="left: 7px; top: 113px; width: 202px; height: 232px">
+<h2 style="left: 0px; top: 0px; width: 200px">Colour Settings</h2>
+<button type="button" onclick="myFunctiond()">
+	Normal Background</button>
+
+<script>
+function myFunctiond() {
+    document.getElementById("content1").style.backgroundColor ="#1F1F1F";
+     document.getElementById("para1").style.color = "#FFFFFF";
+      document.getElementById("title1").style.color = "#FFFFFF";
+}
+</script>
+<div><button type="button" onclick="myFunctionz()" style="z-index: 1; position: absolute; top: 96px; left: 0px">
+	White Background</button>
+
+<script>
+function myFunctionz() {
+    document.getElementById("content1").style.backgroundColor ="#FFFFFF";
+     document.getElementById("title1").style.color = "#000000";
+      document.getElementById("para1").style.color = "#000000";
+}
+</script>
+</div>
+</div>
+
+<div class="text_size" style="left: 5px; top: 351px; height: 241px; width: 204px"><h2 style="left: 0px; top: 0px; width: 200px">Text Settings</h2>
+<button type="button" onclick="myFunction()">Normal Font Size</button>
+ 
+<script>
+function myFunction() {
+    document.getElementById("para1").style.fontSize = "12pt";
+}
+</script>
+
+<button type="button" onclick="myFunction1()" style="z-index: 1; position: absolute; top: 146px; left: -1px">Large Font Size</button>
+ 
+<script>
+function myFunction1() {
+    document.getElementById("para1").style.fontSize = "16pt";
+}
+</script>
+
+<button type="button" onclick="myFunction2()" style="z-index: 1; position: absolute; top: 91px; left: 0px">Medium Font Size</button>
+ 
+<script>
+function myFunction2() {
+    document.getElementById("para1").style.fontSize = "14pt";
+}
+</script>
+
+
+
+</div>
+
 </body>
 </html>

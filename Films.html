@@ -39,6 +39,121 @@ function FP_getObjectByID(id,o) {//v1.0
 -->
 </script>
 <style type="text/css">
+button {
+    background-color: #1F1F1F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.size_options h2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:white;
+font-size:30px;
+}
+.text_size h2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:white;
+font-size:30px;
+}
+
+#para1 {
+	position: relative;
+	max-width: 960px;
+	margin: auto;
+	color: #FFFFFF;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#para2 {
+	position: relative;
+	max-width: 960px;
+	margin: auto;
+	color: #FFFFFF;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#title1 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:30px;
+}
+#title2 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:30px;
+}
+#title3 {
+position: relative;
+font-family:"Monotype Corsiva";
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+color:#FFFFFF;
+font-size:30px;
+}
+
+.size_options {
+	margin:auto;
+	position:absolute;
+	max-width:960px;
+	
+}
+.text_size {
+	margin:auto;
+	position:absolute;
+	max-width:960px;
+	
+}
+#content1 {
+	position: relative;
+	max-width: 960px;
+	width:480px;
+	margin: auto;
+	height: 640px;
+	background-color: #1F1F1F;
+}
+#content1 h3 {
+position: relative;
+max-width: 960px;
+width:480px;
+margin: auto;
+text-align:center;
+font-family:"Monotype Corsiva";
+color:white;
+font-size:x-large;
+}
+#content1 p {
+	position: relative;
+	max-width: 960px;
+	margin: auto;
+	color: white;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 #menu-bar {
   max-width:960px;
   margin: auto;
@@ -244,31 +359,6 @@ function FP_getObjectByID(id,o) {//v1.0
 	max-width: 960px;
 	margin: auto;
 }
-.content1 {
-	position: relative;
-	max-width: 960px;
-	width:480px;
-	margin: auto;
-	height: 640px;
-	background-color: #1F1F1F;
-}
-.content1 h3 {
-position: relative;
-max-width: 960px;
-width:480px;
-margin: auto;
-font-family:"Monotype Corsiva";
-text-align:center;
-color:white;
-font-size:30px;
-}
-.content1 p {
-	position: relative;
-	max-width: 960px;
-	margin: auto;
-	color: white;
-	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
 .content2 {
 	position: relative;
 	max-width: 960px;
@@ -324,11 +414,11 @@ left:10px;
 </ul>
 </div>
 <div class="audio" style="height: 2px"><audio controls src="Sound/2.wav" type="audio/wav"></audio></div>
-<div class="content1" style="left: 12px; top: 36px; width: 518px; z-index: 2;">
-	<h3 style="z-index: 4"><br />
+<div id="content1" style="left: 12px; top: 36px; width: 518px; z-index: 2;">
+	<h3 id="title1" style="z-index: 4"><br />
 	Medieval Adventure films</h3>
-	<p style="left: 0px; top: 20px; width: 475px; z-index: 3;" class="auto-style1">Welcome to the films section! Here we bring you Medieval Adventure films. Below are films which are available for you to preview, these are also currently the only films which are available, at the moment.</p>
-<div class="img1" style="width: 142px; position: absolute; left: 24px; top: 181px; height: 187px; z-index: 5;">
+	<p id="para1" style="left: 3px; top: 8px; width: 475px; z-index: 3;">Welcome to the films section! Here we bring you Medieval Adventure films. Below are films which are available for you to preview, these are also currently the only films which are available, at the moment.</p>
+<div class="img1" style="width: 142px; position: absolute; left: 24px; top: 216px; height: 187px; z-index: 5;">
 	<a href="WarLord.html"><img src="Images/warlord.jpg" width="141" id="img1s" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1s',/*url*/'Images/previews/prev3.jpg')" height="187"></img></a>
 <div class="img2" style="width: 142px; position: absolute; left: 164px; top: 0px; height: 187px; z-index: 5;">
 	<a href="FirstKnight.html"><img src="Images/firstknight.jpg" width="141" id="img2s" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img2s',/*url*/'Images/previews/prev2.jpg')" height="187"></img></a>
@@ -341,7 +431,54 @@ left:10px;
 	<a href="Copyright/License.docx"><h4 class="text3" style="left: 186px; top: 13px; width: 140px;">@Copyright 2018</h4></a>
 	<p class="text4" style="left: 135px; top: 33px">All rights reserved. The Reel Classics</p></div>
 
+<div class="size_options" style="left: 7px; top: 113px; width: 202px; height: 232px">
+<h2 style="left: 0px; top: 0px; width: 200px">Colour Settings</h2>
+<button type="button" onclick="myFunctiond()">
+	Normal Background</button>
 
-		<!-- end div#menu -->
+<script>
+function myFunctiond() {
+    document.getElementById("content1").style.backgroundColor ="#1F1F1F";
+     document.getElementById("para1").style.color = "#FFFFFF";
+      document.getElementById("title1").style.color = "#FFFFFF";
+}
+</script>
+<div><button type="button" onclick="myFunctionz()" style="z-index: 1; position: absolute; top: 96px; left: 0px">
+	White Background</button>
+
+<script>
+function myFunctionz() {
+    document.getElementById("content1").style.backgroundColor ="#FFFFFF";
+     document.getElementById("title1").style.color = "#000000";
+      document.getElementById("para1").style.color = "#000000";
+}
+</script>
+</div>
+</div>
+
+<div class="text_size" style="left: 5px; top: 351px; height: 241px; width: 204px"><h2 style="left: 0px; top: 0px; width: 200px">Text Settings</h2>
+<button type="button" onclick="myFunction()">Normal Font Size</button>
+ 
+<script>
+function myFunction() {
+    document.getElementById("para1").style.fontSize = "12pt";
+}
+</script>
+
+<button type="button" onclick="myFunction1()" style="z-index: 1; position: absolute; top: 146px; left: -1px">Large Font Size</button>
+ 
+<script>
+function myFunction1() {
+    document.getElementById("para1").style.fontSize = "16pt";
+}
+</script>
+
+<button type="button" onclick="myFunction2()" style="z-index: 1; position: absolute; top: 91px; left: 0px">Medium Font Size</button>
+ 
+<script>
+function myFunction2() {
+    document.getElementById("para1").style.fontSize = "14pt";
+}
+</script>
 	</body>
 </html>
