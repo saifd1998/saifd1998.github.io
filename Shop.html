@@ -362,7 +362,7 @@ font-size:30px;
 	left: 18px;
 	margin:auto;
 }
-.body {
+#body {
 	background: linear-gradient(#2C2C2C, #999999);
 	background-repeat:no-repeat;
 	background-color:#999999;
@@ -413,10 +413,6 @@ table {
 	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 	font-size:17px;
 }
-.auto-style1 {
-	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-	font-size: 11pt;
-}
 .auto-style2 {
 	font-size: 10pt;
 }
@@ -426,10 +422,10 @@ table {
 </style>
 </head>
 
-<body class="body" style="height:1864px;">			
+<body id="body" style="height:1864px;">			
 
 		<div class="img" style="left: 19px; top: 0px; height: 78px; width: 408px; z-index: 3;">
-		<a href="Home.html"><img src="Images/img6.gif" height="132" style="z-index: 2;  top: -1px; left: 2px" width="402"/></a>
+		<a href="Home.html"><img id="img4" src="Images/img6.gif" height="132" style="z-index: 2;  top: -1px; left: 2px" width="402"/></a>
 		</div>
       		
 <div>
@@ -622,15 +618,15 @@ table {
 </TABLE>
 </div>
 
-<div class="content2" style="left: 13px; top: 43px; height: 77px; width: 760px">
+<div id="content2" class="content2" style="left: 13px; top: 43px; height: 77px; width: 760px">
 	<a href="Copyright/License.docx">
-	<h4 class="text3" style="left: 306px; top: 14px; width: 140px;">@Copyright 2018</h4></a>
-	<p class="text4" style="left: 254px; top: 38px">All rights reserved. The Reel Classics</p></div>
+	<h4 id="text3" class="text3" style="left: 306px; top: 14px; width: 140px;">@Copyright 2018</h4></a>
+	<p id="text4" class="text4" style="left: 254px; top: 38px">All rights reserved. The Reel Classics</p></div>
 	
 	<div class="size_options" style="left: 7px; top: 113px; width: 202px; height: 232px">
-<h2 style="left: 0px; top: 0px; width: 200px">Colour Settings</h2>
+<h2 id="h2" style="left: 0px; top: 0px; width: 200px">Theme Settings</h2>
 <button type="button" onclick="myFunctiond()">
-	Normal Background</button>
+	Dark Theme</button>
 
 <script>
 function myFunctiond() {
@@ -649,14 +645,24 @@ function myFunctiond() {
                 document.getElementById("para7").style.color = "#FFFFFF";
                  document.getElementById("para8").style.color = "#FFFFFF";
                   document.getElementById("para9").style.color = "#FFFFFF";
+                   document.getElementById("body").style.background = "linear-gradient(#2C2C2C, #999999)";
+                    document.getElementById("body").style.backgroundColor ="#999999";
+                     document.getElementById("menu-bar").style.backgroundColor ="#1F1F1F";
+                      document.getElementById("body").style.backgroundRepeat ="no-repeat";
+                       document.getElementById("h2").style.color ="#FFFFFF";
+                         document.getElementById("text3").style.color = "#FFFFFF";
+                          document.getElementById("text4").style.color = "#FFFFFF";
+                           document.getElementById("img4").src="Images/img6.gif";
+                            document.getElementById("content2").style.backgroundColor ="#1F1F1F";
+
 }
 </script>
 <div><button type="button" onclick="myFunctionz()" style="z-index: 1; position: absolute; top: 96px; left: 0px">
-	White Background</button>
+	Light Theme</button>
 
 <script>
 function myFunctionz() {
-    document.getElementById("content1").style.backgroundColor ="#FFFFFF";
+    document.getElementById("content1").style.backgroundColor ="#F4F4F4";
      document.getElementById("para1").style.color = "#000000";
       document.getElementById("title1").style.color = "#000000";
        document.getElementById("para2").style.color = "#000000";
@@ -670,7 +676,17 @@ function myFunctionz() {
                document.getElementById("para6").style.color = "#000000";
                 document.getElementById("para7").style.color = "#000000";
                  document.getElementById("para8").style.color = "#000000";
-                  document.getElementById("para9").style.color = "#000000";
+                  document.getElementById("para9").style.color = "#000000";           
+                   document.getElementById("body").style.background = "linear-gradient(#999999, #FFFFFF)";
+                    document.getElementById("body").style.backgroundColor ="#FFFFFF";
+                     document.getElementById("menu-bar").style.backgroundColor ="#F4F4F4";
+                      document.getElementById("body").style.backgroundRepeat ="no-repeat";
+                       document.getElementById("h2").style.color ="#000000";
+                         document.getElementById("text3").style.color = "#000000";
+                          document.getElementById("text4").style.color = "#000000";
+                           document.getElementById("img4").src="Images/img62.gif";
+                            document.getElementById("content2").style.backgroundColor ="#F4F4F4";
+
 
 
 }

@@ -310,7 +310,7 @@ font-size:x-large;
 	left: 18px;
 	margin:auto;
 }
-.body {
+#body {
 	background: linear-gradient(#2C2C2C, #999999);
 	background-repeat:no-repeat;
 	background-color:#999999;
@@ -354,10 +354,10 @@ left:10px;
 </style>
 </head>
 
-<body class="body" onload="FP_preloadImgs(/*url*/'Images/fb2.gif')">
+<body id="body" onload="FP_preloadImgs(/*url*/'Images/fb2.gif')">
 
 		<div class="img" style="left: 19px; top: 0px; height: 78px; width: 408px; z-index: 3;">
-		<a href="Home.html"><img src="Images/img6.gif" height="132" style="z-index: 2;  top: -1px; left: 2px" width="402"/></a>
+		<a href="Home.html"><img id="img4" src="Images/img6.gif" height="132" style="z-index: 2;  top: -1px; left: 2px" width="402"/></a>
 		</div>
 
 <div>
@@ -392,36 +392,56 @@ left:10px;
 	Marc prepares for war, Chrysagon must also contend with his jealous brother.</p>
 	<iframe width="430" height="200" src="https://www.youtube.com/embed/kOIHEyj6YGc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="z-index: 1; position: absolute; top: 65px; left: 42px"></iframe>
 </div>
-<div class="content2" style="left: 12px; top: 41px; height: 77px; width: 518px">
-	<a href="Copyright/License.docx"><h4 class="text3" style="left: 186px; top: 13px; width: 140px;">@Copyright 2018</h4></a>
-	<p class="text4" style="left: 135px; top: 33px">All rights reserved. The Reel Classics</p></div>
+<div id="content2" class="content2" style="left: 12px; top: 41px; height: 77px; width: 518px">
+	<a href="Copyright/License.docx"><h4 id="text3" class="text3" style="left: 186px; top: 13px; width: 140px;">@Copyright 2018</h4></a>
+	<p id="text4" class="text4" style="left: 135px; top: 33px">All rights reserved. The Reel Classics</p></div>
 	
 	<div class="size_options" style="left: 7px; top: 113px; width: 202px; height: 232px">
-<h2 style="left: 0px; top: 0px; width: 200px">Colour Settings</h2>
+<h2 id="h2" style="left: 0px; top: 0px; width: 200px">Theme Settings</h2>
 <button type="button" onclick="myFunctiond()">
-	Normal Background</button>
+	Dark Theme</button>
 
 <script>
 function myFunctiond() {
-    document.getElementById("content1").style.backgroundColor ="#1F1F1F";
-     document.getElementById("para1").style.color = "#FFFFFF";
-      document.getElementById("title1").style.color = "#FFFFFF";
+   document.getElementById("content1").style.backgroundColor ="#1F1F1F";
+     document.getElementById("body").style.background = "linear-gradient(#2C2C2C, #999999)";
+      document.getElementById("body").style.backgroundColor ="#999999";
+       document.getElementById("menu-bar").style.backgroundColor ="#1F1F1F";
+        document.getElementById("body").style.backgroundRepeat ="no-repeat";
+         document.getElementById("title1").style.color = "#FFFFFF";
+          document.getElementById("h2").style.color ="#FFFFFF";
+           document.getElementById("text5").style.color ="#FFFFFF";
+            document.getElementById("text3").style.color = "#FFFFFF";
+             document.getElementById("text4").style.color = "#FFFFFF";
+              document.getElementById("para1").style.color = "#FFFFFF";
+               document.getElementById("img4").src="Images/img6.gif";
+                document.getElementById("content2").style.backgroundColor ="#1F1F1F";
 }
 </script>
 <div><button type="button" onclick="myFunctionz()" style="z-index: 1; position: absolute; top: 96px; left: 0px">
-	White Background</button>
+	Light Theme</button>
 
 <script>
 function myFunctionz() {
-    document.getElementById("content1").style.backgroundColor ="#FFFFFF";
-     document.getElementById("title1").style.color = "#000000";
-      document.getElementById("para1").style.color = "#000000";
+    document.getElementById("content1").style.backgroundColor ="#F4F4F4";
+     document.getElementById("body").style.background = "linear-gradient(#999999, #FFFFFF)";
+      document.getElementById("body").style.backgroundColor ="#FFFFFF";
+       document.getElementById("menu-bar").style.backgroundColor ="#F4F4F4";
+        document.getElementById("body").style.backgroundRepeat ="no-repeat";
+         document.getElementById("title1").style.color = "#000000";
+          document.getElementById("h2").style.color ="#000000";
+           document.getElementById("text5").style.color ="#000000";
+            document.getElementById("text3").style.color = "#000000";
+             document.getElementById("text4").style.color = "#000000";
+              document.getElementById("para1").style.color = "#000000";
+               document.getElementById("img4").src="Images/img62.gif";
+                document.getElementById("content2").style.backgroundColor ="#F4F4F4";
 }
 </script>
 </div>
 </div>
 
-<div class="text_size" style="left: 5px; top: 351px; height: 241px; width: 204px"><h2 style="left: 0px; top: 0px; width: 200px">Text Settings</h2>
+<div class="text_size" style="left: 5px; top: 351px; height: 241px; width: 204px"><h2 id="text5" style="left: 0px; top: 0px; width: 200px">Text Settings</h2>
 <button type="button" onclick="myFunction()">Normal Font Size</button>
  
 <script>
